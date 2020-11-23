@@ -1,0 +1,89 @@
+﻿<style>
+    body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        background-color: skyblue;
+    }
+    .panel-body {
+        padding: 15px;
+        background-color: wheat;
+    }
+    h1, .h1 {
+        font-size: 36px;
+        color: steelblue;
+    }
+</style>
+
+    
+
+    <form>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1 class="page-title">Login Panel</h1>
+
+                <div class="panel panel-info">
+
+
+                    <h1 class="text-primary">&nbsp; Login</h1>
+
+                    <div class="panel panel-body">
+
+
+                        <input type="text" class="form-control" id="loginUserId" name="loginUserId" placeholder="User ID" required="">
+
+                        <br>
+                        <input type="password" class="form-control" id="loginPassword" name="loginPassword" placeholder="Password" required="">
+
+                        <br>
+
+                        <input class="btn btn-success" type="submit" value="Login" formmethod="post" formaction="/Institution/Users?loginUserId=loginUserId&amp;loginPassword=loginPassword">
+
+                        <h3 class="text-danger"></h3>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-lg-4"><br></div>
+
+        </div>
+
+
+    </form>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ResetId" role="dialog">
+        <div class="modal-dialog">
+
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 class="text-primary">&nbsp;Reset</h4>
+                </div>
+                <form>
+                    <div class="modal-body">
+
+                        <input type="text" class="form-control" id="UserId" name="UserId" placeholder="User ID" required="">
+
+                        <br>
+                        <input type="password" class="form-control" id="Password" name="Password" placeholder="Password" required="">
+
+                        <br>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <input type="submit" value="Submit" class="btn btn-success" formmethod="post" formaction="/Institution/Users/Reset?UserId=UserId&amp;Password=Password">
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+

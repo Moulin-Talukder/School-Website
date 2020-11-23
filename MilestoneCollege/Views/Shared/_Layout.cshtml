@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MilestoneCollege</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <div class="container-fluid" style=" background-color:skyblue;color: #a93226 ;">
+        <div class="row">
+            <div class="col-sm-1" style="height :100px;">
+                <span>
+                    <img src="~/images/logo.jpg" class="img-circle" alt="Cinque Terre" width="100" height="78" style="padding-top:19px;">
+                </span>
+            </div>
+            <div class="col-sm-8">
+                <h1 style="font-size:45px;margin-right:75px;color: #a93226;">Milestone School & College</h1>
+
+            </div>
+            <div class="col-sm-3" style="padding:0;">
+
+            </div>
+            <div class="clearfix visible-sm"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <p>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Result">Result</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Facilities">Facilities</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="AcademicInfo">AcademicInfo</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Login">Login</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Admission">Admission</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Feedback">Feedback</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Admin">Admin</a></li>
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container body-content">
+        <div class="row">
+            <div class="col-md-8">
+                @RenderBody()
+            </div>
+            <div class="col-sm-4">
+
+                <div class="sidebar">
+
+                    <div class="box">
+
+                        <div class="box-title">
+
+                            <h4>ADVISER'S MESSAGE</h4>
+
+                        </div>
+
+                        <div class="box-content">
+
+
+
+                            <div class="chairman-short">
+                                <a href="detail_chairman.php?charid=7995" class="detail"> <img src="//milestonecollege.edu.bd/wp-content/uploads/2017/05/Adviser.jpg" alt="Nurunnobi sir"></a>
+                                
+                                <marquee><p>Welcome to Milestone College. We, being...</p></marquee>
+                                    <a href="http://milestonecollege.com/page_details.php?type=page&amp;id=60" class="more">Read More</a>
+                                </div>
+
+
+                            </div>
+
+                    </div>
+
+
+
+                    <div class="box">
+
+                        <div class="box-title">
+
+                            <h4>PRINCIPAL'S MESSAGE</h4>
+
+                        </div>
+
+                        <div class="box-content">
+
+
+
+
+                            <div class="chairman-short">
+                                <a href="http://www.milestonecollege.com/page_details.php?type=page&amp;id=59" class="detail"> <img src="http://www.milestonecollege.com/images/principal3.jpg" alt="Kamal sir"> </a>
+
+                                <marquee><p>I welcome you all to Milestone College and express ... </p></marquee>
+                                <a href="http://www.milestonecollege.com/page_details.php?type=page&amp;id=59" class="more">Read More</a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="box">
+
+                        <div class="box-title">
+
+                            <h4>PRINCIPAL’S (ADMIN) MESSAGE</h4>
+
+                        </div>
+
+                        <div class="box-content">
+
+                            <div class="chairman-short">
+
+                                <a href="http://milestonecollege.com/page_details.php?type=page&amp;id=62" class="detail">
+
+                                    <img src="http://www.milestonecollege.com/images/principal_admin_small.jpg" alt="Kamal sir">
+                                </a>
+
+                                <marquee><p>welcome you to Milestone College online...</p></marquee>
+                                <a href="http://milestonecollege.com/page_details.php?type=page&amp;id=62" class="more">Read More</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- <div class="box">
+           <div class="box-title">
+             <h4>GALLERY</h4>
+           </div>
+           <img src="images/gallery.jpg" alt="">
+         </div>  -->
+
+                </div>
+
+            </div>
+        </div>
+        <hr />
+        <footer>
+            <style>
+                h2, .h2 {
+                    font-size: 30px;
+                    color: tomato;
+                }
+            </style>
+            <div class="container-fluid bg-3 text-center" style="background-color:#0F172D;color:white;">
+                <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h2>News and Events</h2>
+                        <ul>
+                            <li><a href="http://www.milestonecollege.com/news.php?news=8" target="_blank">শিক্ষা নিয়ে গড়বো দেশ, শেখ হাসিনার বাংলাদেশ</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>Notice Board</h2>
+                        <li><a href="http://www.milestonecollege.com/notice.php?notice_id=130" target="_blank">Admission Notice 2018 2017-11-12</a></li>
+                        <li><a href="http://www.milestonecollege.com/notice.php?notice_id=127" target="_blank">Leaflet 2018</a></li>
+                    </div>
+                    <div class="col-md-3">
+                        <h2>Useful Links</h2>
+                        <ul>
+                                <li><a href="http://www.educationboard.gov.bd/" target="_blank">Education Board Bangladesh</a></li>
+
+
+                                <li><a href="http://www.nu.edu.bd" target="_blank">National University</a></li>
+
+
+                                <li><a href="http://dhakaeducationboard.portal.gov.bd/" target="_blank">Dhaka Education Borad</a></li>
+
+
+                                <li><a href="http://www.milestonecollege.edu.bd/" target="_blank">Ministry of Public Administration</a></li>
+
+
+                                
+
+                                
+
+                            </ul>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .topbar, .copyrights-area {
+                    background: #353535;
+                }
+
+                .copyrights-area {
+                    background: none repeat scroll 0 0 #373c43;
+                    height: 50px;
+                    line-height: 50px;
+                    overflow: hidden;
+                }
+            </style>
+            <div class="copyrights-area">
+                <center><p>&copy; Developed By Talukder Makid Uddin Moulin</p></center>
+            </div>
+        </footer>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
